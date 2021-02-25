@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background:linear-gradient(rgb(95, 101, 185),rgb(130, 169, 235),rgb(205, 160, 201));
+    font-family: sans-serif;
+}
+.score{
+    color: rgb(224, 224, 224);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+.score h2{
+    padding: 20px;
+    margin-top: 35px;
+   font-size: 30px;
+   font-weight: lighter;
+   color: rgb(224, 224, 224);
+   
+}
+.score p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+.intro{
+    color: rgb(224, 224, 224);
+    height: 60vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+    
+}
+.intro h1{
+    font-size: 50px;
+   color: rgb(41, 58, 95);
+
+}
+
+.intro button,
+.match .options button{
+    width: 150px;
+    height: 50px;
+    background: rgb(70, 45, 117);
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+.intro button,
+.match .options button:hover{
+    background:rgb(132, 74, 179);
+    transition: 0.1s all ease-in;
+    color: white;
+}
+.intro .rock-paper-scissor{
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+}
+.match{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease;
+}
+.match .winner{
+    color: rgb(162, 211, 99);
+    text-align: center;
+    font-size: 40px;
+    
+    margin: 40px;
+}
+.match .Player-hand{
+    transform: rotateY(180deg);
+}
+.match .hands,
+.match .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
